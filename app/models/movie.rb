@@ -1,5 +1,5 @@
 class Movie < ActiveRecord::Base
-
+  require 'paperclip'
   has_attached_file :poster
   
   def self.all

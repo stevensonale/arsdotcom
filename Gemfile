@@ -6,7 +6,7 @@ gem 'rails', '3.0.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql'
-gem 'paperclip'
+gem 'paperclip', :git => 'http://github.com/thoughtbot/paperclip.git'
 gem 'kaminari'
 
 # Use unicorn as the web server

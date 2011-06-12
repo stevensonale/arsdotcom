@@ -4,7 +4,7 @@ Blogonhr::Application.routes.draw do |map|
   map.resources :messages
   map.resources :movies
   map.resources :sessions
-  map.dances 'dance', :controller => "dances"
+  map.dances 'dances', :controller => "dances"
   map.films 'films', :controller => "movies"
   map.contact 'contact', :controller => "messages", :action => "new"
   map.login 'login', :controller => "sessions", :action => "new"
