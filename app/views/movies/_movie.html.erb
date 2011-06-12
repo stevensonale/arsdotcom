@@ -1,0 +1,7 @@
+<h2><%= movie.movie_name%></h2><p><b><%= h(movie.date_seen.strftime("%x"))%></b></p>
+<p><%= image_tag movie.poster.url(:thumb), :class => "thumbnail"%></p>
+<p ><%=truncate(movie.movie_synopsis, :length => 100, :separator => ' ')%>
+<span><%= link_to_unless_current h("More"), movie%></span></p>
+
+
+

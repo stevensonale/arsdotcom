@@ -1,0 +1,22 @@
+<p>
+  <b>Event:</b>
+  <%=h @dance.event %>
+</p>
+
+<p>
+  <b>Event location:</b>
+  <%=h @dance.event_location %>
+</p>
+<p>
+  <b>Event time:</b>
+  <%=h @dance.event_time %>
+</p>
+
+<p>
+  <b>Event description:</b>
+  <%=h @dance.event_description %>
+</p>
+
+
+<%= link_to 'Edit', edit_dance_path(@dance) %> |
+<%= link_to 'Back', dances_path %>

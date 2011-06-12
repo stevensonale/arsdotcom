@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  movie_name: MyString
+  date_seen: 2011-06-02
+  movie_synopsis: MyText
+  movie_review: MyText
+
+two:
+  movie_name: MyString
+  date_seen: 2011-06-02
+  movie_synopsis: MyText
+  movie_review: MyText

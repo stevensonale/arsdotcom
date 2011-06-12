@@ -1,0 +1,26 @@
+<h1>dance</h1>
+
+<table>
+  <tr>
+    <th>Event</th>
+    <th>Event location</th>
+    <th>Event time</th>
+    <th>Event description</th>
+  </tr>
+
+<% @dances.each do |dance| %>
+  <tr>
+    <td><%=h dance.event %></td>
+    <td><%=h dance.event_location %></td>
+    <td><%=h dance.event_time %></td>
+    <td><%=h dance.event_description %></td>
+    <td><%= link_to 'Show', dance %></td>
+    <td><%= link_to 'Edit', edit_dance_path(dance) %></td>
+    <td><%= link_to 'Destroy', dance, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New dance', new_dance_path %>

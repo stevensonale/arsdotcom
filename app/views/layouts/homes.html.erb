@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<%= stylesheet_link_tag "alexstevenson", "scaffold"%>
+<title>alexstevenson.com</title>
+</head>
+<div class="wrapper">
+<body>
+<div id="Table_01">
+	<div id="alexstevenson-01_"> 
+    <div id="navbar">
+    	<ul class="nav">
+        	<li><a href="#">blog</a></li>
+			<li><%= link_to 'films', movies_path%></li>
+            <li><a href="#">dance</a></li>
+            <li><a href="#">design</a></li>
+            <li><%= link_to 'contact', contact_path%></li>
+        </ul>
+		</div>
+		<%=image_tag "alexstevenson_01.png", :width=>"1000",  :height=>"177", :alt=>"" %>
+  </div>
+      
+	<div id="alexstevenson-02_">
+		<%=image_tag "alexstevenson_02.png", :width=>"1000",  :height=>"470", :alt=>"" %>
+	</div>
+</div>
+</body>
+</div>
+</html>

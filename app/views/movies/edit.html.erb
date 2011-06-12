@@ -1,0 +1,9 @@
+<div class="show">
+<h1>Edit movie</h1>
+
+<%= render :partial => 'onemovie'%>
+
+<p>
+<%= link_to 'Destroy', @movie, :method=> :delete, :confirm => "Are you sure?" %> |
+<%= link_to 'Back', movies_path %></p>
+</div>

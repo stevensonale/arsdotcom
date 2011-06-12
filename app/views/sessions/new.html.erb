@@ -1,0 +1,6 @@
+<h1>Login</h1>
+<% form_tag sessions_path do %>  
+<p>Username:<span class="align"><%= password_field_tag :username %></span> </p>
+<p>Password:<span class="align"><%= password_field_tag :password %></span></p>
+<p><%= submit_tag "Login" %> </p> 
+<% end %>
