@@ -1,6 +1,52 @@
 @charset "utf-8";
 /* CSS Document */
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
 body { 
 	margin: 0px;
   text-align: center; 
@@ -88,9 +134,31 @@ position: relative;
 }
 
 #alexstevenson-02_ h1 {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-weight: bold;
 	font-size: 210%;
 	color: #ffffff;
 	padding-left: 50px;
+	padding-bottom: 0px;
+	}
+	
+#alexstevenson-02_ h2 {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 150%;
+	color: #ffffff;
+	padding-bottom: 10px;
+	margin-left: 50px;
+	}
+	
+#alexstevenson-02_ h3 {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 110%;
+	color: #ffffff;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 3px;
 	}
 
 #alexstevenson-02_ p {
@@ -112,14 +180,12 @@ label {
 .fieldWithErrors input{
 	color: red;
 	margin-left: 50px;
-	size: 20px;
 	padding-top: 0px;
 	}
 	
 .fieldWithErrors textarea{
 color: black;
 	margin-left: 50px;
-	size: 20px;
 	}
 	
 .show{
@@ -159,10 +225,28 @@ table{
 .align{
 	position:absolute;
 	left: 150px;
+	
 }
 
 .login{
 	position: absolute;
 	left: 820px;
 	color: #fff;
+}
+
+.input{
+	margin-bottom: 25px;
+}
+
+p input{
+	margin-top: 0px;
+}
+
+p label{
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.spacer{
+	margin-bottom: 5px;
 }

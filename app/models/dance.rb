@@ -3,7 +3,7 @@ class Dance < ActiveRecord::Base
   has_attached_file :photo
   
   def self.all
-    find(:all,  :order => "dance_time DESC")
+    find(:all,  :order => "dance_date_one DESC")
   end
   
   def self.find_recent
@@ -11,5 +11,5 @@ class Dance < ActiveRecord::Base
   end
   
   has_attached_file :photo,
-    :styles => { :medium => "300x300>", :thumb => "100>x100" }
+    :styles => { :large => "500x500>", :medium => "300x300>", :thumb => "100>x100" }
 end

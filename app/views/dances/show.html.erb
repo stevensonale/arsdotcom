@@ -1,9 +1,13 @@
 <div class="show">
 <% div_for @dance do%>
+<p><%= image_tag @dance.photo.url(:large)%></p>
+<br/>
 <h2><%= @dance.dance_name%></h2>
-<p><b><%= h(@dance.dance_time.strftime("%x"))%></b></p>
-<p><%= image_tag @dance.photo.url(:medium)%></p>
-<%= simple_format h(@dance.dance_description)%>
+<p><b><%= @dance.dance_location%></b></p>
+<p><b><%= h(@dance.dance_date_one.strftime("%A, %x"))%> - <%= h(@dance.dance_time.strftime("%I:%M %p"))%></b></p>
+<p><b>Lesson One - <%= h(@dance.lesson_one_description)%></b> - <b><%= h(@dance.lesson_one_time.strftime("%I:%M %p"))%></b></p>
+<br/>
+<p ><%= @dance.dance_description%></p>
 <%end%>
 <p>
 <%if admin?%>
@@ -12,3 +16,4 @@
 <%end%>
 <%= link_to 'All Dances', dances_path %>
 </p>
+</div>

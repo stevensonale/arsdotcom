@@ -3,14 +3,19 @@
 <% div_for @movie do%>
 <h2><%= @movie.movie_name%></h2>
 <p><b><%= h(@movie.date_seen.strftime("%x"))%></b></p>
+<br/>
 <p><%= image_tag @movie.poster.url(:medium)%></p>
-<%= simple_format h(@movie.movie_synopsis)%>
+<br/>
+<%= simple_format (@movie.movie_synopsis)%>
 <%= simple_format h(@movie.movie_review)%>
 <%end%>
+<br/>
 <p>
+<%if admin?%>
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to "Destroy", @movie, :confirm => 'Are you sure?', :method => :delete %> |
-<%= link_to 'See All Movies', movies_path %>
+<%end%>
+<%= link_to 'All Movies', movies_path %>
 </p>
 </div>
 

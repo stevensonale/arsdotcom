@@ -10,12 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110612143720) do
+ActiveRecord::Schema.define(:version => 20110613105246) do
 
   create_table "dances", :force => true do |t|
     t.string   "dance_name"
     t.string   "dance_location"
+    t.date     "dance_date_one"
+    t.date     "dance_date_two"
     t.time     "dance_time"
+    t.time     "lesson_one_time"
+    t.time     "lesson_two_time"
+    t.time     "lesson_three_time"
     t.text     "dance_description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -23,6 +28,9 @@ ActiveRecord::Schema.define(:version => 20110612143720) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.string   "lesson_one_description"
+    t.string   "lesson_two_description"
+    t.string   "lesson_three_description"
   end
 
   create_table "homes", :force => true do |t|
