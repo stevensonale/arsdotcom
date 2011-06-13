@@ -8,6 +8,7 @@ gem 'rails', '3.0.8'
 gem 'mysql'
 gem 'paperclip', :git => 'http://github.com/thoughtbot/paperclip.git'
 gem 'kaminari'
+gem 'RedCloth', :require => 'redcloth'
 
 # Use unicorn as the web server
 # gem 'unicorn'

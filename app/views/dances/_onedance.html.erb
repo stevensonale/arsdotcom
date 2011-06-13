@@ -1,0 +1,52 @@
+<% form_for @dance, :html => { :multipart => true }  do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dance_name %>
+    <%= f.text_field :dance_name %>
+  </p>
+  <p>
+    <%= f.label :dance_location %>
+    <%= f.text_field :dance_location %>
+  </p>
+<p>
+    <%= f.label :dance_date_one %>
+    <%= f.date_select :dance_date_one %>
+  </p>
+<p>
+    <%= f.label :dance_date_two %>
+    <%= f.date_select :dance_date_two %>
+  </p>
+<p>
+    <%= f.label :dance_time %>
+    <%= f.time_select :dance_time %>
+  </p>
+<p>
+    <%= f.label :lesson_one_description %>
+    <%= f.text_field :lesson_one_description %>
+  </p>
+<p>
+    <%= f.label :lesson_one_time %>
+    <%= f.time_select :lesson_one_time %>
+  </p>
+<p>
+    <%= f.label :lesson_two_description %>
+    <%= f.text_field :lesson_two_description %>
+  </p>
+  <p>
+    <%= f.label :Lesson_two_time %>
+    <%= f.time_select :lesson_two_time %>
+  </p>
+  <p>
+    <%= f.label :dance_description %>
+    <%= f.text_area :dance_description %>
+  </p>
+  <p>
+    <%= f.label :photo, "Please upload a dance photo." %>
+    <%= f.file_field :photo %>
+  </p>
+<br />
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

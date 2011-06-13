@@ -1,8 +1,10 @@
 <p class="login"><%=link_to 'Login', login_path%>|<%=link_to 'Logout', logout_path%></p>
 <h1>Dances</h1>
+<br/><br/>
 <div class = "show">
 <%if admin?%>
 <p><%= link_to 'New dance', new_dance_path %></p>
 <%end%>
 <p><%= render :partial => @dances %></p>
 </div>
+

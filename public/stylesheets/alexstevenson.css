@@ -243,10 +243,26 @@ p input{
 }
 
 p label{
-	margin-bottom: 0px;
 	margin-top: 20px;
+	margin-bottom: 0px;
 }
 
 .spacer{
 	margin-bottom: 5px;
+}
+
+.myforms h1{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+form{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.rc p{
+	color: #ffffff;
+	line-height: 1.7em;
+	margin-top: .75em;
 }

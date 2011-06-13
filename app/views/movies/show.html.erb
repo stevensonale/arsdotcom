@@ -6,8 +6,8 @@
 <br/>
 <p><%= image_tag @movie.poster.url(:medium)%></p>
 <br/>
-<%= simple_format (@movie.movie_synopsis)%>
-<%= simple_format h(@movie.movie_review)%>
+<div class="rc"><%=RedCloth.new(@movie.movie_synopsis).to_html.html_safe%></div>
+<%= (@movie.movie_review)%>
 <%end%>
 <br/>
 <p>
