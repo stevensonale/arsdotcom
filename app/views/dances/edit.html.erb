@@ -1,28 +1,9 @@
+<div class="show">
 <h1>Editing dance</h1>
 
-<% form_for(@dance) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial => 'onedance'%>
 
-  <p>
-    <%= f.label :dance_name%><br />
-    <%= f.text_field :dance_name %>
-  </p>
-  <p>
-    <%= f.label :dance_location %><br />
-    <%= f.text_field :dance_location %>
-  </p>
-  <p>
-    <%= f.label :dance_time %><br />
-    <%= f.datetime_select :dance_time %>
-  </p>
-  <p>
-    <%= f.label :dance_description %><br />
-    <%= f.text_area :dance_description %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @dance %> |
-<%= link_to 'Back', dances_path %>
+<p>
+<%= link_to 'Destroy', @dance, :method=> :delete, :confirm => "Are you sure?" %> |
+<%= link_to 'Back', dances_path %></p>
+</div>

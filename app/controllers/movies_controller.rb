@@ -77,12 +77,14 @@ class MoviesController < ApplicationController
   def destroy
     @movie = Movie.find(params[:id])
     @movie.destroy
-
+    flash[:notice]="Successfully destroyed movie"
     respond_to do |format|
       format.html { redirect_to(movies_url) }
       format.xml  { head :ok }
     end
   end
+  
+  
   
 
 

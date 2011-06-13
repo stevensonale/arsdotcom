@@ -1,22 +1,14 @@
+<div class="show">
+<% div_for @dance do%>
+<h2><%= @dance.dance_name%></h2>
+<p><b><%= h(@dance.dance_time.strftime("%x"))%></b></p>
+<p><%= image_tag @dance.photo.url(:medium)%></p>
+<%= simple_format h(@dance.dance_description)%>
+<%end%>
 <p>
-  <b>Event:</b>
-  <%=h @dance.dance_name %>
-</p>
-
-<p>
-  <b>Event location:</b>
-  <%=h @dance.dance_location %>
-</p>
-<p>
-  <b>Event time:</b>
-  <%=h @dance.dance_time %>
-</p>
-
-<p>
-  <b>Event description:</b>
-  <%=h @dance.dance_description %>
-</p>
-
-
+<%if admin?%>
 <%= link_to 'Edit', edit_dance_path(@dance) %> |
-<%= link_to 'Back', dances_path %>
+<%= link_to "Destroy", @dances, :confirm => 'Are you sure?', :method => :delete %> |
+<%end%>
+<%= link_to 'All Dances', dances_path %>
+</p>

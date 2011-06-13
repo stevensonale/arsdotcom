@@ -1,4 +1,5 @@
 class DancesController < ApplicationController
+  before_filter :authorize, :except => [:index, :show]
   # GET /dances
   # GET /dances.xml
   def index
