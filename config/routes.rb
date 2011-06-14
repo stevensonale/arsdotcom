@@ -1,9 +1,11 @@
 Blogonhr::Application.routes.draw do |map|
+  map.resources :bloggers
   map.resources :dances   
   map.resources :homes
   map.resources :messages
   map.resources :movies
   map.resources :sessions
+  map.bloggers 'blog', :controller => "bloggers"
   map.dances 'dances', :controller => "dances"
   map.films 'films', :controller => "movies"
   map.contact 'contact', :controller => "messages", :action => "new"

@@ -1,11 +1,12 @@
 <p class="login"><%=link_to 'Login', login_path%>|<%=link_to 'Logout', logout_path%></p>
-<h1>Films</h1>
-<br/><br/>
-<p><%= paginate @movies%></p>
 <div class = "show">
+<h1>Films</h1>
+<br/>
 <%if admin?%>
 <p><%= link_to 'New movie', new_movie_path %></p>
 <%end%>
+<p><%= paginate @movies%></p>
+
 <%= render :partial => @movies %>
 <br/>
 <br/>
