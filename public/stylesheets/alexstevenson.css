@@ -170,23 +170,39 @@ label {
 	display: block;
 	padding-bottom: 0px;
 }
+
+p input{
+	margin-top: 0px;
+}
+
+p label{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
 	
-.fieldWithErrors label {
-	color: white;
+.field_with_errors label {
+	color: #ffffff;
+	margin-top: 20px;
+	margin-bottom: 0px;
 	padding-left: 50px;
 	padding-bottom: 0px;
 	}
 	
-.fieldWithErrors input{
+.field_with_errors input{
 	color: red;
 	margin-left: 50px;
 	padding-top: 0px;
+	margin-top: 0px;
 	}
 	
-.fieldWithErrors textarea{
-color: black;
+.field_with_errors textarea{
+	color: #000000;
 	margin-left: 50px;
 	}
+	
+.errorExplanation{
+	margin-left: 50px;
+}	
 	
 .show{
 	width: 750px;
@@ -238,14 +254,7 @@ table{
 	margin-bottom: 25px;
 }
 
-p input{
-	margin-top: 0px;
-}
 
-p label{
-	margin-top: 20px;
-	margin-bottom: 0px;
-}
 
 .spacer{
 	margin-bottom: 5px;
