@@ -1,0 +1,10 @@
+<p class="login"><%=link_to 'Login', login_path%>|<%=link_to 'Logout', logout_path%></p>
+<h1>Musings</h1>
+<br/><br/>
+<div class = "show">
+<%if admin?%>
+<p><%= link_to 'New post', new_blog_path %></p>
+<%end%>
+<br/>
+<p><%= render :partial => @blogs %></p>
+</div>

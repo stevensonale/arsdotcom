@@ -10,9 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110614153234) do
+ActiveRecord::Schema.define(:version => 20110615105537) do
 
- create_table "dances", :force => true do |t|
+  create_table "blogs", :force => true do |t|
+    t.string   "post_title"
+    t.date     "post_date"
+    t.text     "post_body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+  end
+
+  create_table "dances", :force => true do |t|
     t.string   "dance_name"
     t.string   "dance_location"
     t.date     "dance_date_one"

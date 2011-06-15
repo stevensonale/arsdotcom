@@ -1,0 +1,24 @@
+<% form_for @blog, :html => { :multipart => true }  do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :post_title %>
+    <%= f.text_field :post_title %>
+  </p>
+<p>
+    <%= f.label :post_date %>
+    <%= f.date_select :post_date %>
+  </p>
+  <p>
+    <%= f.label :post_body %>
+    <%= f.text_area :post_body %>
+  </p>
+  <p>
+    <%= f.label :picture, "Please upload a picture." %>
+    <%= f.file_field :picture %>
+  </p>
+<br />
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

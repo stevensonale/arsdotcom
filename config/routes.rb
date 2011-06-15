@@ -1,13 +1,15 @@
 Blogonhr::Application.routes.draw do
 
+  resources :blogs
   resources :dances   
   resources :homes
   resources :messages
   resources :movies
   resources :sessions
-
-  match "/dances" => "dances#index", :as => :dances
-  match "/films" => "movies#index", :as => :films
+  
+  match "/blogs", :to => "blogs#index"
+  match "/dances", :to => "dances#index"
+  match "/movies", :to => "movies#index"
   match "/contact" => "messages#new", :as => :contact
   match "/login" => "sessions#new", :as => :login
   match "/logout" => "sessions#destroy", :as => :logout

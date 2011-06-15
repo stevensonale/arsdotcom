@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<div class="show">
+<p>
+  <b>Post title:</b>
+  <%= @blog.post_title %>
+</p>
+
+<p>
+  <b>Post date:</b>
+  <%= @blog.post_date %>
+</p>
+
+<p>
+  <b>Post body:</b>
+  <%= @blog.post_body %>
+</p>
+<br/>
+<p>
+<%if admin?%>
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to "Destroy", @blogs, :confirm => 'Are you sure?', :method => :delete %> |
+<%end%>
+<%= link_to 'All Posts', blog_path %></p>
+</div>

@@ -12,6 +12,6 @@ class SessionsController < ApplicationController
    def destroy  
      reset_session  
      flash[:notice] = "Successfully logged out"  
-     redirect_to movies_path
+     redirect_to homes_path
    end 
 end

@@ -1,0 +1,7 @@
+<h2><%= blog.post_title%></h2>
+<br/>
+<p><%= image_tag blog.picture.url(:medium)%></p>
+<br/>
+<p><%=truncate(blog.post_body, :length => 100, :separator => ' ')%></p>
+<p><span><%= link_to_unless_current h("More"), blog%></span></p>
+<br/><br/>
