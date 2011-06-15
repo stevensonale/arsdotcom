@@ -1,16 +1,16 @@
-Blogonhr::Application.routes.draw do |map|
-  map.resources :bloggers
-  map.resources :dances   
-  map.resources :homes
-  map.resources :messages
-  map.resources :movies
-  map.resources :sessions
-  map.bloggers 'blog', :controller => "bloggers"
-  map.dances 'dances', :controller => "dances"
-  map.films 'films', :controller => "movies"
-  map.contact 'contact', :controller => "messages", :action => "new"
-  map.login 'login', :controller => "sessions", :action => "new"
-  map.logout 'logout', :controller => "sessions", :action => "destroy"
+Blogonhr::Application.routes.draw do
+
+  resources :dances   
+  resources :homes
+  resources :messages
+  resources :movies
+  resources :sessions
+
+  match "/dances" => "dances#index", :as => :dances
+  match "/films" => "movies#index", :as => :films
+  match "/contact" => "messages#new", :as => :contact
+  match "/login" => "sessions#new", :as => :login
+  match "/logout" => "sessions#destroy", :as => :logout
   
   
 
@@ -69,9 +69,10 @@ Blogonhr::Application.routes.draw do |map|
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  map.root :controller => "homes"
+  
+  #map.root :controller => "homes"
   # root :to => "welcome#index"
-
+  root :to => "homes#index"
   # See how all your routes lay out with "rake routes"
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
