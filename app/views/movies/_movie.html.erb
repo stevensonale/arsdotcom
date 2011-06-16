@@ -1,7 +1,7 @@
 <h3><%= movie.movie_name%></h3><p class="spacer"><b><%= h(movie.date_seen.strftime("%x"))%></b></p>
 <p><%=image_tag movie.poster.url(:thumb)%></p>
 <br/>
-<p ><%=truncate(movie.movie_synopsis, :length => 100, :separator => ' ')%>
+<p><%=truncate((RedCloth.new(movie.movie_synopsis)).to_html, :length => 100, :separator => ' ').html_safe%>
 <span class="spacer"><%= link_to_unless_current h("More"), movie%></span></p>
 
 
