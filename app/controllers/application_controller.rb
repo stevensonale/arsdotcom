@@ -16,8 +16,8 @@ def authorize
 end
 
 def admin?
-  session[:username] == "suave"
-  session[:password] == "softmonkey"  
+  session[:username] == "pbear"
+  session[:password] == "Alum79*"  
 end
   
   

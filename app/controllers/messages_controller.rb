@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_filter :authenticate, :except => [:new, :create]
+  before_filter :authorize, :except => [:new, :create]
   # GET /messages
   # GET /messages.xml
   def index
