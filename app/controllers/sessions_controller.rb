@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
      session[:username] = params[:username]
      session[:password] = params[:password]  
      flash[:notice] = "Successfully logged in"  
-     redirect_to movies_path  
+     redirect_to homes_path  
    end  
      
    def destroy  
