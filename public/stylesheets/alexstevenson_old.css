@@ -23,7 +23,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 }
 body {
-	font-family:  "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, 	sans-serif;
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
 	line-height: 1;
 	color: black;
 	background: white;
@@ -50,19 +50,24 @@ blockquote, q {
 
 /*end of CSS reset*/
 
-
+.wrapper { 
+position: relative;
+  text-align: left; 
+  border: 2px solid #fff;
+  width: 962px;
+  background-color: #cc3366;
+  height: 100%;
+  margin: 0 auto -180px;
+}
 
 body { 
-	margin: 0;
-	padding: 0;
-	background-color: #FFFFFF;
+	margin: 0px;
+  text-align: center; 
+  min-width: 1000px;
+	background-color: #cc3366;
+	height: 100%;
+}
 
-}
-.wrapper { 
-	width: 962px;
-	background: #FFFFFF;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
-}
 #navbar{
 	position: absolute;
 	width: 600px;
@@ -81,7 +86,7 @@ body {
 
 .nav li{
 	float: left;
-	font: 130%/1.6;
+	font: 150%/1.6 "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, 	sans-serif;
 	font-weight: bold;
 	text-align: center;
 	padding-right: 1em;
@@ -128,31 +133,51 @@ body {
 
 }
 
-#ars_content {
+#alexstevenson-01_ {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1000px;
+	height:177px;
+}
+
+#alexstevenson-02_ {
+	position:absolute;
+	left: 0px;
+	top: 177px;
+	padding-top: 40px;
 	width: 1000px;
 	min-height: 520px;
 	height: auto !important;
+	height: 520px;
 	background-color: #000000;
-	padding-top: 30px;
 }
 
-#ars_content h1 {	
-	font-size: 210%;
+#alexstevenson-03_ {
+	position: relative;
+	left: 0px;
+	width:1000px;
+}
+
+#alexstevenson-02_ h1 {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
 	font-weight: bold;
+	font-size: 210%;
 	color: #ffffff;
 	padding-left: 50px;
 	padding-bottom: 0px;
 	}
 	
-#ars_content h2 {
-	font-size: 150%;
+#alexstevenson-02_ h2 {
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
 	font-weight: bold;
+	font-size: 150%;
 	color: #ffffff;
 	padding-bottom: 10px;
 	margin-left: 50px;
 	}
 	
-#ars_content h3 {
+#alexstevenson-02_ h3 {
 	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
 	font-weight: bold;
 	font-size: 110%;
@@ -162,14 +187,10 @@ body {
 	padding-bottom: 3px;
 	}
 
-#ars_content p {
+#alexstevenson-02_ p {
 	color: #ffffff;
 	padding-left: 50px;
 	}
-	
-#ars_footer {
-	width:1000px;
-}
 	
 label {
 	display: block;
@@ -282,3 +303,6 @@ form{
 	margin-top: .75em;
 }
 
+#alexstevenson-03_, .push{	
+	height: 180px;
+}

@@ -4,11 +4,13 @@
 <%= stylesheet_link_tag :all %>
 <%= javascript_include_tag :defaults %>
 <%= csrf_meta_tag %>
+
 <title>alexstevenson.com</title>
 </head>
-<body>
 <div class="wrapper">
-	<div id="ars_branding"> 
+<body style="background-color:#FFFFFF;">
+<div id="Table_01">
+	<div id="alexstevenson-01_"> 
     <div id="navbar">
     	<ul class="nav">
         	<li><%= link_to 'blog', blogs_path%></li>
@@ -17,15 +19,19 @@
             <li><a href="#">design</a></li>
             <li><%= link_to 'contact', contact_path%></li>
         </ul>
-	<!-- end navbar --></div>
+		</div>
 		<%=image_tag "alexstevenson_01.png", :width=>"1000",  :height=>"177", :alt=>"" %>
-  <!-- end ars_branding --></div>
+  </div>
+  <div id="alexstevenson-02_"><%= yield %></div>
+
       
-	<div id="ars_content">
-		<%=image_tag "alexstevenson_02.png", :width=>"1000",  :height=>"470", :alt=>"" %>
-	<!-- end ars_content --></div>
-<div id="ars_footer"><%=image_tag "alexstevenson_footer.png", :width=>"1000", :height=>"177", :alt=>"" %>
-<!-- end ars_footer --></div>
-<!-- end wrapper --></div>
+	<!--<div id="alexstevenson-02_">
+		<%=image_tag "alexstevenson_02.png", :width=>"1000",  :height=>"468", :alt=>"" %>
+	</div>-->
+<div class="push"></div>
+</div>
+
+<div id="alexstevenson-03_"><%=image_tag "alexstevenson_footer.png", :width=>"1000", :height=>"177", :alt=>"" %></div>
 </body>
+</div>
 </html>
