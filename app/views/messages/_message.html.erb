@@ -1,0 +1,11 @@
+<br/><br/>
+<p><b>From:</b> <%= message.name%></p>
+<p><b>Email:</b><%= message.email%></p>
+<p><b>Company:</b> <%= message.company%></p>
+<p><b>Subject:</b> <%= message.subject%></p>
+<p><b>Phone:</b> <%= message.phone%></p>
+<p><b>Message:</b> <%= message.body%></p>
+<br/>
+<p><%= link_to 'Show', message %> |
+<%= link_to 'Edit', edit_message_path(message) %> |
+<%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %></p>

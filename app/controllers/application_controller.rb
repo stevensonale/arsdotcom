@@ -10,7 +10,7 @@ protected
 def authorize
   unless admin?
     flash[:error] = "unauthorized access"
-    redirect_to homes_path
+    redirect_to login_path
     false
   end
 end

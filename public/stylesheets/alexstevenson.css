@@ -114,23 +114,11 @@ body {
 	font-weight: bold;
 	background-color: transparent;
 }
-	
-}
 
-#Table_01 {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:1000px;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-
-}
 
 #ars_content {
 	width: 1000px;
-	min-height: 520px;
+	min-height: 550px;
 	height: auto !important;
 	background-color: #000000;
 	padding-top: 30px;

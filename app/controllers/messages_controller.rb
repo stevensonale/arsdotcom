@@ -45,6 +45,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
+        ContactMailer.contact_message(@message).deliver
         flash[:notice] = 'Message was successfully created.'
         format.html { redirect_to(@message) }
         format.xml  { render :xml => @message, :status => :created, :location => @message }
