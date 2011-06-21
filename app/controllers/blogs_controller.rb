@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+  layout 'blog'
   before_filter :authorize, :except => [:index, :show]
   # GET /blogs
   # GET /blogs.xml
