@@ -23,7 +23,7 @@
 <div id="ars_content">
 <%= yield %>
 <!-- end ars_content --></div>
-<div id="everydaystuff"><h2>Everyday Stuff</h2>
+<div id="everydaystuff"><%= render :partial => @blogs %>
 <!-- end everydaystuff --></div>
 <div id="ars_footer"><%=image_tag "alexstevenson_footer.png", :width=>"1000", :height=>"177", :alt=>"" %>
 <!-- end ars_footer --></div>

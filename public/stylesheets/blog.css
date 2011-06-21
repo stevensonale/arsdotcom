@@ -49,8 +49,10 @@
 	width: 330px;
 	float: right;
 	padding-right: 10px;
-	padding-top: 40px;
+	padding-top: 30px;
 	margin-right: 10px;
+	min-height: 550px;
+	height: auto !important;
 }
 
 #everydaystuff h1{
