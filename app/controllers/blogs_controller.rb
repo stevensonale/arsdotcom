@@ -1,11 +1,11 @@
 class BlogsController < ApplicationController
-  layout 'blog'
+  layout :resolve_layout
   before_filter :authorize, :except => [:index, :show]
   # GET /blogs
   # GET /blogs.xml
   def index
     @blogs = Blog.all
-
+    @movies = Movie.all
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }

@@ -1,10 +1,13 @@
+<div id="ars_content">
+<h1>The Trip</h1>
+<%= render :partial => @movies %>
+<!-- end ars_content --></div>
+<div id="everydaystuff">
 <p class="login"><%=link_to 'Login', login_path%>|<%=link_to 'Logout', logout_path%></p>
 <h1>Musings</h1>
-<br/><br/>
-<div class = "show">
 <%if admin?%>
-<p><%= link_to 'New post', new_blog_path %></p>
+<p><%= link_to 'New entry', new_blog_path %></p>
 <%end%>
 <br/>
-<p><%= render :partial => @blogs %></p>
-</div>
+<%= render :partial => @blogs %>
+<!-- end everydaystuff --></div>

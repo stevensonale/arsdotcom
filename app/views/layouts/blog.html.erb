@@ -20,11 +20,7 @@
 	<!-- end navbar --></div>
 <%=image_tag "alexstevenson_01.png", :width=>"1000",  :height=>"177", :alt=>"" %>	
 <!-- end ars_branding --></div>
-<div id="ars_content">
-<%= yield %>
-<!-- end ars_content --></div>
-<div id="everydaystuff"><%= render :partial => @blogs %>
-<!-- end everydaystuff --></div>
+<%= yield%>
 <div id="ars_footer"><%=image_tag "alexstevenson_footer.png", :width=>"1000", :height=>"177", :alt=>"" %>
 <!-- end ars_footer --></div>
 <!-- end wrapper --></div>

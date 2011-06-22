@@ -48,7 +48,7 @@
 #everydaystuff{
 	width: 330px;
 	float: right;
-	padding-right: 10px;
+	padding-right: 25px;
 	padding-top: 30px;
 	margin-right: 10px;
 	min-height: 550px;
@@ -59,12 +59,18 @@
 	font-size: 210%;
 	font-weight: bold;
 	color: #ffffff;
+	padding-bottom: 30px;
 }
 
 #everydaystuff h2{
 	font-size: 150%;
 	font-weight: bold;
 	color: #ffffff;
+}
+#everydaystuff h3{
+	padding-top: 10px;
+	color: #ffffff;
+	padding-bottom: 0px;
 }
 
 #everydaystuff h3{}

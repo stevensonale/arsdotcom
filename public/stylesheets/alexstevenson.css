@@ -72,8 +72,6 @@ body, p, ol, ul, td {
   margin: 0 auto; 
 }
 
-
-
 #navbar{
 	position: absolute;
 	width: 600px;
@@ -227,6 +225,18 @@ p label{
 	color: #ffffff;
 }
 
+.white, .white p a{
+	color: #ffffff;
+
+}
+
+.white p{
+	padding-top: 0px;
+	line-height: 1.5em;
+	margin-top: .75em;
+	
+}
+
 .show p a{
 	color: #ffffff;
 }
@@ -255,7 +265,7 @@ table{
 
 .login{
 	position: absolute;
-	left: 820px;
+	right: 50px;
 	color: #fff;
 }
 

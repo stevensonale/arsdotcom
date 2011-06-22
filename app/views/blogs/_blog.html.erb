@@ -1,7 +1,15 @@
 <h2><%= blog.post_title%></h2>
+<h3><%=blog.post_date.strftime("%x")%></h3>
+<%if blog.picture.exists?%>
 <br/>
 <p><%= image_tag blog.picture.url(:medium)%></p>
+<%end%>
 <br/>
-<p><%=truncate(blog.post_body, :length => 100, :separator => ' ')%></p>
-<p><span><%= link_to_unless_current h("More"), blog%></span></p>
+<div class="white">
+<p ><%=RedCloth.new(blog.post_body).to_html.html_safe%></p>
+<p><%if admin?%>
+<%= link_to 'Edit', edit_blog_path(blog) %> |
+<%= link_to "Destroy", blog, :confirm => 'Are you sure?', :method => :delete %> |
+<%end%></p>
+</div>
 <br/><br/>

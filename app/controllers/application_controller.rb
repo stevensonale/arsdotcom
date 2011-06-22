@@ -20,6 +20,15 @@ def admin?
   session[:password] == "Alum79*"  
 end
   
+
+def resolve_layout
+  case action_name
+  when 'index'
+      'blog'
+  else
+      'application'
+  end
+end
   
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
