@@ -1,15 +1,14 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.8'
-gem "rake", "0.8.7"
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'gmaps4rails', '0.7.7'
 gem 'mysql'
 gem 'paperclip', :git => 'http://github.com/thoughtbot/paperclip.git'
 gem 'kaminari'
 gem 'RedCloth', :require => 'redcloth'
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'

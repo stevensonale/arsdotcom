@@ -5,7 +5,8 @@ class BlogsController < ApplicationController
   # GET /blogs.xml
   def index
     @blogs = Blog.all
-    @movies = Movie.all
+    @locations = Location.all
+    @json = Location.all.to_gmaps4rails
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }

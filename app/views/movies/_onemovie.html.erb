@@ -1,6 +1,6 @@
+
 <% form_for @movie, :html => { :multipart => true }  do |f| %>
   <%= f.error_messages %>
-
   <p>
     <%= f.label :movie_name %><br />
     <%= f.text_field :movie_name %>

@@ -4,6 +4,7 @@
 <%= stylesheet_link_tag "alexstevenson", "blog", "scaffold"%>
 <%= javascript_include_tag :defaults %>
 <%= csrf_meta_tag %>
+<%=yield :head%>
 <title>alexstevenson.com</title>
 </head>
 <body">
@@ -24,5 +25,6 @@
 <div id="ars_footer"><%=image_tag "alexstevenson_footer.png", :width=>"1000", :height=>"177", :alt=>"" %>
 <!-- end ars_footer --></div>
 <!-- end wrapper --></div>
+<%=yield :scripts%>
 </body>
 </html>
