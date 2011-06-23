@@ -1,0 +1,33 @@
+<h1>Listing locations</h1>
+
+<table>
+  <tr>
+    <th>Location name</th>
+    <th>Location address</th>
+    <th>Longitude</th>
+    <th>Latitude</th>
+    <th>Tripday date</th>
+    <th>Tripday log</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @locations.each do |location| %>
+  <tr>
+    <td><%= location.location_name %></td>
+    <td><%= location.location_address %></td>
+    <td><%= location.longitude %></td>
+    <td><%= location.latitude %></td>
+    <td><%= location.tripday_date %></td>
+    <td><%= location.tripday_log %></td>
+    <td><%= link_to 'Show', location %></td>
+    <td><%= link_to 'Edit', edit_location_path(location) %></td>
+    <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Location', new_location_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  location_name: MyString
+  location_address: MyString
+  longitude: 1.5
+  latitude: 1.5
+  tripday_date: 2011-06-22
+  tripday_log: MyText
+
+two:
+  location_name: MyString
+  location_address: MyString
+  longitude: 1.5
+  latitude: 1.5
+  tripday_date: 2011-06-22
+  tripday_log: MyText
