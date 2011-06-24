@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<%= stylesheet_link_tag "alexstevenson", "scaffold"%>
+<%= javascript_include_tag :defaults %>
+<%= csrf_meta_tag %>
+<%=yield :head%>
+<title>alexstevenson.com</title>
+</head>
+<body">
+<div class="wrapper">
+<div id="ars_branding"> 
+    <div id="navbar">
+    	<ul class="nav">
+        	<li><%= link_to 'blog', blogs_path%></li>
+            <li><%= link_to 'films', movies_path%></li>
+            <li><%= link_to 'dance', dances_path%></li>
+            <li><a href="#">design</a></li>
+            <li><%= link_to 'contact', contact_path%></li>
+        </ul>
+	<!-- end navbar --></div>
+<%=image_tag "alexstevenson_01.png", :width=>"1000",  :height=>"177", :alt=>"" %>	
+<!-- end ars_branding --></div>
+<div id="ars_content">
+<%= yield %>
+<p><%= (Date.today + 1.day).to_s(:long)%></p>
+<!-- end ars_content --></div>
+<div id="ars_footer"><%=image_tag "alexstevenson_footer.png", :width=>"1000", :height=>"177", :alt=>"" %>
+<!-- end ars_footerpoop --></div>
+<!-- end wrapper --></div>
+<%=yield :scripts%>
+</body>
+</html>

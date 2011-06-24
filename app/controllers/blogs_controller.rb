@@ -7,6 +7,7 @@ class BlogsController < ApplicationController
     @blogs = Blog.all
     @locations = Location.all
     @json = Location.all.to_gmaps4rails
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }
@@ -17,7 +18,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.xml
   def show
     @blog = Blog.find(params[:id])
-
+    @oneplace = Location.find(params[:id]).to_gmaps4rails
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @blog }

@@ -116,7 +116,6 @@ body, p, ol, ul, td {
 	background-color: transparent;
 }
 
-
 .nav a:active{
 	color: #ff0033;
 	text-decoration: underline;
@@ -124,10 +123,6 @@ body, p, ol, ul, td {
 	background-color: transparent;
 }
 
-#ars_branding{
-
-	
-}
 
 #ars_content {
 	width: 1000px;
@@ -141,7 +136,6 @@ body, p, ol, ul, td {
 	font-size: 210%;
 	font-weight: bold;
 	color: #ffffff;
-	padding-left: 50px;
 	padding-bottom: 0px;
 	}
 	
@@ -150,7 +144,6 @@ body, p, ol, ul, td {
 	font-weight: bold;
 	color: #ffffff;
 	padding-bottom: 10px;
-	margin-left: 50px;
 	}
 	
 #ars_content h3 {
@@ -158,14 +151,12 @@ body, p, ol, ul, td {
 	font-weight: bold;
 	font-size: 110%;
 	color: #ffffff;
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 3px;
 	}
 
 #ars_content p {
 	color: #ffffff;
-	padding-left: 50px;
 	}
 	
 #ars_footer {
@@ -186,42 +177,24 @@ p label{
 	margin-bottom: 0px;
 }
 	
-.field_with_errors label {
-	color: #ffffff;
-	margin-top: 20px;
-	margin-bottom: 0px;
-	padding-left: 50px;
-	padding-bottom: 0px;
-	}
-	
-.field_with_errors input{
-	color: red;
-	margin-left: 50px;
-	padding-top: 0px;
-	margin-top: 0px;
-	}
-	
-.field_with_errors textarea{
-	color: #000000;
-	margin-left: 50px;
-	}
-	
-.errorExplanation{
-	margin-left: 50px;
-}	
-	
+
 .show{
 	width: 750px;
 	padding-bottom: 30px;
+	margin-left: 50px;
 }
 
 .show h2{
 	font-size: 125%;
 	color: #ffffff;
-	margin-left: 50px;
+
 }
 
 .show h2 a{
+	color: #ffffff;
+}
+
+.show p a{
 	color: #ffffff;
 }
 
@@ -236,11 +209,6 @@ p label{
 	margin-top: .75em;
 	
 }
-
-.show p a{
-	color: #ffffff;
-}
-
 
 
 span.secret a{
@@ -272,7 +240,6 @@ table{
 .input{
 	margin-bottom: 25px;
 }
-
 
 
 .spacer{

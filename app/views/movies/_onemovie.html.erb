@@ -1,24 +1,24 @@
-
+<div class="myforms">
 <% form_for @movie, :html => { :multipart => true }  do |f| %>
   <%= f.error_messages %>
   <p>
-    <%= f.label :movie_name %><br />
+    <%= f.label :movie_name %>
     <%= f.text_field :movie_name %>
   </p>
   <p>
-    <%= f.label :date_seen %><br />
+    <%= f.label :date_seen %>
     <%= f.date_select :date_seen %>
   </p>
   <p>
-    <%= f.label :movie_synopsis %><br />
+    <%= f.label :movie_synopsis %>
     <%= f.text_area :movie_synopsis %>
   </p>
   <p>
-    <%= f.label :movie_review %><br />
+    <%= f.label :movie_review %>
     <%= f.text_area :movie_review %>
   </p>
   <p>
-    <%= f.label :poster, "Please upload a movie poster." %><br />
+    <%= f.label :poster, "Please upload a movie poster." %>
     <%= f.file_field :poster %>
   </p>
 <br/>
@@ -26,3 +26,4 @@
     <%= f.submit 'Create' %>
   </p>
 <% end %>
+</div>

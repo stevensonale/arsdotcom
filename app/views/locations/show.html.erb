@@ -1,5 +1,6 @@
+<div class = "show">
 <p id="notice"><%= notice %></p>
-
+<p><%= gmaps4rails(@oneplace) %></p>
 <p>
   <b>Location name:</b>
   <%= @location.location_name %>
@@ -33,3 +34,4 @@
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
+</div>

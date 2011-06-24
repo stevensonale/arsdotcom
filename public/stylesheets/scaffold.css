@@ -49,3 +49,21 @@ div.field, div.actions {
   list-style: square;
   margin-left: 10px;
 }
+
+.field_with_errors label {
+	color: #ffffff;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	}
+	
+.field_with_errors input{
+	color: red;
+	padding-top: 0px;
+	margin-top: 0px;
+	}
+	
+.field_with_errors textarea{
+	color: #000000;
+	}	
+	

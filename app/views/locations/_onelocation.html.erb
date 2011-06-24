@@ -1,27 +1,28 @@
+<div class="myforms">
 <% form_for (@location) do |f| %>
   <%= f.error_messages %>
   <p>
-   <%= f.label :location_name %><br />
+   <%= f.label :location_name %>
     <%= f.text_field :location_name %>
   </p>
   <p>
-    <%= f.label :location_address %><br />
+    <%= f.label :location_address %>
     <%= f.text_field :location_address %>
   </p>
 <p>
-    <%= f.label :longitude %><br />
+    <%= f.label :longitude %>
     <%= f.text_field :longitude %>
   </p>
 <p>
-    <%= f.label :latitude %><br />
+    <%= f.label :latitude %>
     <%= f.text_field :latitude %>
   </p>
 <p>
-    <%= f.label :tripday_date %><br />
+    <%= f.label :tripday_date %>
     <%= f.date_select :tripday_date %>
   </p>
 <p>
-    <%= f.label :tripday_log %><br />
+    <%= f.label :tripday_log %>
     <%= f.text_area :tripday_log %>
   </p>
 <br />

@@ -23,8 +23,8 @@ end
 
 def resolve_layout
   case action_name
-  when 'index'
-      'blog'
+  when 'index', 'show'
+      'blognew'
   else
       'application'
   end

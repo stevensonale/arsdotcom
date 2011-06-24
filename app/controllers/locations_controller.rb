@@ -1,4 +1,5 @@
 class LocationsController < ApplicationController
+  layout :resolve_layout
   # GET /locations
   # GET /locations.xml
   def index
@@ -14,7 +15,7 @@ class LocationsController < ApplicationController
   # GET /locations/1.xml
   def show
     @location = Location.find(params[:id])
-
+    @oneplace = Location.find(params[:id]).to_gmaps4rails
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @location }
