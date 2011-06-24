@@ -8,7 +8,6 @@
       })%>
 <br/>
 <h2><%= h(@location.tripday_date.strftime("%x"))%> - <%= @location.location_name%></h2>
-<br/>
 <div class="rc"><%=RedCloth.new(@location.tripday_log).to_html.html_safe%></div>
 <br/>
 <p>

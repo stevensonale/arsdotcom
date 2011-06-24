@@ -270,7 +270,22 @@ form{
 	margin-top: .75em;
 }
 
+.more a:link{
+	color: #ff0033;
+}
+
+.more a:visited{
+	color: #ff0033;
+}
+
 #map_container{
 	padding-bottom: 0px;
 	margin-bottom: 0px;
+}
+
+.smaller p{
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 1.5em;
+	margin-top: .75em;
 }
