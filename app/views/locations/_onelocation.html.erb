@@ -19,7 +19,8 @@
   </p>
 <p>
     <%= f.label :tripday_date %>
-    <%= f.date_select :tripday_date %>
+    <%= f.date_select("tripday_date", :start_year => 1980) %>
+
   </p>
 <p>
     <%= f.label :tripday_log %>

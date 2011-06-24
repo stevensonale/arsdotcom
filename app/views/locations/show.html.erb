@@ -1,37 +1,23 @@
 <div class = "show">
-<p id="notice"><%= notice %></p>
-<p><%= gmaps4rails(@oneplace) %></p>
+<br/>
+<!--<p><%= gmaps4rails(@onelocation) %></p>-->
+
+<%=gmaps({
+       "map_options" => {"auto_zoom" => false, "zoom" => 12, "type" => 'TERRAIN', "center_latitude" => @location.latitude, "center_longitude" => @location.longitude },
+       "onelocation"     => {"data" => @onelocation }
+      })%>
+<br/>
+<h2><%= h(@location.tripday_date.strftime("%x"))%> - <%= @location.location_name%></h2>
+<br/>
+<div class="rc"><%=RedCloth.new(@location.tripday_log).to_html.html_safe%></div>
+<br/>
 <p>
-  <b>Location name:</b>
-  <%= @location.location_name %>
-</p>
-
-<p>
-  <b>Location address:</b>
-  <%= @location.location_address %>
-</p>
-
-<p>
-  <b>Longitude:</b>
-  <%= @location.longitude %>
-</p>
-
-<p>
-  <b>Latitude:</b>
-  <%= @location.latitude %>
-</p>
-
-<p>
-  <b>Tripday date:</b>
-  <%= @location.tripday_date %>
-</p>
-
-<p>
-  <b>Tripday log:</b>
-  <%= @location.tripday_log %>
-</p>
-
-
+<%if admin?%>
 <%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>
+<%= link_to "Destroy", @location, :confirm => 'Are you sure?', :method => :delete %> |
+<%end%>
+<%= link_to 'All points', blogs_path %>
+</p>
 </div>
+
+

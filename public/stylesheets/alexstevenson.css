@@ -194,6 +194,10 @@ p label{
 	color: #ffffff;
 }
 
+.show p{
+	color: #ffffff;
+}
+
 .show p a{
 	color: #ffffff;
 }
@@ -241,6 +245,10 @@ table{
 	margin-bottom: 25px;
 }
 
+.nospace{
+	margin: 0px;
+	padding: 0px;	
+}
 
 .spacer{
 	margin-bottom: 5px;
@@ -262,3 +270,7 @@ form{
 	margin-top: .75em;
 }
 
+#map_container{
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
