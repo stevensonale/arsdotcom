@@ -1,6 +1,7 @@
-<h3><%= location.tripday_date.strftime("%x")%> - <%=h(location.location_address)%></h3>
+<h2><%= location.tripday_date.strftime("%x")%> - <%=h(location.location_address)%></h2>
 <p><%=truncate((RedCloth.new(location.tripday_log)).to_html, :length => 200, :separator => ' ').html_safe%></p>
 <p><span><%= link_to_unless_current h("More"), location%></span></p>
+<br/>
 
 
 

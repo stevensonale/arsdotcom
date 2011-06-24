@@ -2,10 +2,12 @@
 <h1>The Trip</h1>
 <br/>
 <%= gmaps4rails(@json) %>
+
 <%if admin?%>
 <br/>
 <p><%= link_to 'New Location', new_location_path %><p>
 <%end%>
+<br/>
 <p><%= render :partial => @locations %></p>
 <br/>
 </div>
