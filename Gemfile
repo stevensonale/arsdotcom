@@ -6,6 +6,7 @@ gem 'mysql'
 gem 'paperclip', :git => 'http://github.com/thoughtbot/paperclip.git'
 gem 'kaminari'
 gem 'RedCloth', :require => 'redcloth'
+gem 'capistrano'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

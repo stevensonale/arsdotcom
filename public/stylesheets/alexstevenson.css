@@ -270,6 +270,18 @@ form{
 	margin-top: .75em;
 }
 
+.rc ul{
+	margin-left: 0;
+	padding-left: 1em;
+	list-style-type: square;
+	line-height: 1.5em;
+	margin-top: .75em;
+	color: #ffffff;
+}
+
+.rc strong{
+	font-weight: bold;
+}
 .more a:link{
 	color: #ff0033;
 }
