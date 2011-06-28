@@ -4,7 +4,7 @@ set :runner, user
 set :domain, '66.84.0.139'
 set :server_type, :thin
 set :thin_port, '20950'
-set :deploy_to, '/home/p627047r/apps/blogonhr'
+set :deploy_to, '/home/p627047r/apps/'
 set :scm, :git
 set :repository,  'git@github.com:stevensonale/arsdotcom.git'
 role :app, application 
