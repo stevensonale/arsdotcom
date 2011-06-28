@@ -32,7 +32,7 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: blogonhr
-  username: root
-  password: woot09
+  database: p627047r_blogonhr
+  username: p627047r_alex
+  password: amc2hut
   host: localhost
