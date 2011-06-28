@@ -19,6 +19,14 @@ set :use_sudo, false
 default_run_options[:pty] = true
 ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "id_rsa-admin")] 
 
+
+set :default_environment, {
+'PATH' => "/usr/kerberos/bin:/usr/lib/courier-imap/bin:/usr/local/rvm/gems/ruby-1.8.7/bin:/usr/local/rvm/gems/ruby-1.8.7@global/bin:/usr/local/rvm/rubies/ruby-1.8.7/bin:/usr/local/rvm/bin:/usr/local/bin:/bin:/usr/bin:/home/p627047r/bin",
+'RUBY_VERSION' => 'ruby-1.8.7',
+'GEM_HOME' => '/usr/local/rvm/gems/ruby-1.8.7',
+'GEM_PATH' => '/usr/local/rvm/gems/ruby-1.8.7:/usr/local/rvm/gems/ruby-1.8.7@global',
+}
+
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 #role :web, 'your web-server here'                         # Your HTTP server, Apache/etc
