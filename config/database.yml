@@ -35,4 +35,3 @@ production:
   database: p627047r_blogonhr
   username: p627047r_alex
   password: amc2hut
-  host: localhost
