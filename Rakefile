@@ -5,4 +5,4 @@ require File.expand_path('../config/application', __FILE__)
 #require 'rake/dsl_definition'
 require 'rake'
 
-Blogonhr::Application.load_tasks
+Alexstevenson.com::Application.load_tasks

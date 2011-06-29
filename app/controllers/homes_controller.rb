@@ -6,8 +6,13 @@ class HomesController < ApplicationController
     @homes = Home.all
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @homes }
+      format.html { render :html => @switches }
+      format.json { render :json => @switches }
+      format.xml  { render :xml  => @switches }
+      format.any  { render :text => "we only have html, json, and xml" }
+
+      #format.html # index.html.erb
+      #format.xml  { render :xml => @homes }
     end
   end
 
