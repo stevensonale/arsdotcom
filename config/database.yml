@@ -6,8 +6,8 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 production:
-	adapter: mysql
-	encoding: utf8
+  adapter: mysql
+  encoding: utf8
 	reconnect: false
 	database: p627047r_blogonhr
 	username: p627047r_alex
