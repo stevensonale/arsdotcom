@@ -8,8 +8,7 @@
 production:
   adapter: mysql
   encoding: utf8
-	reconnect: false
-	database: p627047r_blogonhr
-	username: p627047r_alex
-	password: amc2hut
-	host: localhost
+  database: p627047r_blogonhr
+  username: p627047r_alex
+  password: amc2hut
+  host: localhost
