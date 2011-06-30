@@ -108,3 +108,4 @@ DEPENDENCIES
   mysql
   paperclip!
   rails (= 3.0.8)
+  rake (= 0.8.7)
