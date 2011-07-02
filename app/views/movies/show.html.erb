@@ -13,7 +13,7 @@
 <p>
 <%if admin?%>
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to "Destroy", @movie, :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to "Destroy", movie_path(@movie), :confirm => 'Are you sure?', :method => :delete %> |
 <%end%>
 <%= link_to 'All Movies', movies_path %>
 </p>
